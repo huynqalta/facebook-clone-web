@@ -22,7 +22,7 @@ function PrivateLogin(Component: React.ComponentType<any | string>) {
     return (
       <>
         {/* {login.controlLogin ? ( */}
-        <Component privateLogin={true} />
+        <Component privateLogin={false} />
         {/* ) : null} */}
       </>
     );
