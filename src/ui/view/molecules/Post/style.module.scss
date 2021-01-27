@@ -1,0 +1,176 @@
+.post {
+    position: relative;
+    margin: 0 0 60px 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    padding: 16px;
+    border-width: 0;
+
+    .header-title {
+        margin: 0 0 0 14px;
+
+        > a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .header-extra {
+        margin: 0 0 0 auto;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.post-content {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+
+    .post-content-scroll {
+        position: relative;
+        display: flex;
+        height: 600px;
+        transform: translateX(-100px);
+        transition: 500ms;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .content-item {
+        position: relative;
+
+        img {
+            width: 600px;
+            height: 100%;
+        }
+    }
+
+    .content-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        .arrow-left {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-color: transparent;
+        }
+    
+        .arrow-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            background-color: transparent;
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    padding: 0 8px;
+    border-width: 0;
+
+    .action-icon {
+        padding: 8px;
+
+        &:last-child {
+            margin: 0 0 0 auto;
+        }
+    }
+}
+
+.count-heart {
+    padding: 0 16px;
+    margin: 0 0 8px 0;
+}
+
+.status {
+    padding: 0 16px;
+    margin: 0 0 4px 0;
+    a:hover:first-child {
+        text-decoration: underline;
+    }
+}
+
+.count-comment {
+    padding: 0 16px;
+    margin: 0 0 4px 0;
+}
+
+.comment {
+    display: flex;
+    padding: 0 16px;
+    margin: 0 0 4px 0;
+
+    .comment-content {
+        flex-grow: 1;
+        a:hover:first-child {
+            text-decoration: underline;
+        }
+    }
+
+    .comment-action-like {
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    border-width: 1px 0 0 0;
+
+    .add-comment-input {
+        flex-grow: 1;
+
+        input {
+            width: 100%;
+            border: 0;
+            outline: 0;
+        }
+    }
+}
+
+.post-modal {
+    display: flex;
+    width: 935px;
+    height: 600px;
+
+    .post-modal-content {
+        width: 600px;
+        height: 600px;
+    }
+
+    .post-modal-sidebar {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .post-header {
+            border-width: 0 0 1px 0;
+        }
+
+        .actions {
+            border-width: 1px 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.story-container {
+    position: relative;
+    width: 80px;
+    padding: 0 4px;
+
+    .story {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        &-active {
+            .story-name {    
+                div {
+                    color: rgba(var(--text-primary), 1) !important;
+                }
+            }
+        }
+        
+        .story-name {
+            width: 100%;
+            padding: 8px 0 0 0;
+
+            div {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: 400;
+                font-size: 12px;
+                color: rgba(var(--text-secondary), 1);
+            }
+        }
+    }
+}
+
+.stories-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1a1a1a;
+}
